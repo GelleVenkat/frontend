@@ -6,4 +6,4 @@ before_install:
   - docker build -t gellevenkat/frontend -f Dockerfile.dev .
 
 script:
-  - docker run gellevenkat/docker-react npm run test -- --coverage    
+  - docker run gellevenkat/frontend npm run test -- --coverage    
